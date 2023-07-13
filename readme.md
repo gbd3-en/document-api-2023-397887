@@ -2,12 +2,28 @@
 
 This API will allow CRUD (Create, Read, Update, Delete) actions against documents.
 
+## Running the application
+
+You will need the [.NET 6 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/6.0) installed.
+
+If you have VS Code installed, you can use the C# extension from Microsoft to launch the API.  It will open a browser window to `/documents/all`.
+
+Otherwise you can run with:
+```
+dotnet run --project MyDocumentApi
+```
+
+and kick off the unit tests with:
+```
+dotnet test
+```
+
 
 ## API Contract
 
 ### All Requests
 
-All requests will return a `X-MyApplication-Identifier` header for informational purposes
+All requests will return a `X-MyApplication-Identifier` header for informational purposes.
 
 
 ### Get all available documents
